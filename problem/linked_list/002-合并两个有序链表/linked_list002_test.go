@@ -5,10 +5,10 @@ import (
 	"testing"
 )
 
-func Test_removeNthFromEnd(t *testing.T) {
+func Test_mergeTwoLists(t *testing.T) {
 	type args struct {
-		head *ListNode
-		n    int
+		l1 *ListNode
+		l2 *ListNode
 	}
 	tests := []struct {
 		name string
@@ -19,8 +19,8 @@ func Test_removeNthFromEnd(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := removeNthFromEnd(tt.args.head, tt.args.n); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("removeNthFromEnd() = %v, want %v", got, tt.want)
+			if got := mergeTwoLists(tt.args.l1, tt.args.l2); !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("mergeTwoLists() = %v, want %v", got, tt.want)
 			}
 		})
 	}
