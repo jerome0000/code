@@ -1,4 +1,4 @@
-package array
+package dynamic
 
 func minimumTotal(triangle [][]int) int {
 	h := len(triangle)

@@ -1,4 +1,4 @@
-package array
+package dynamic
 
 import "testing"
 
